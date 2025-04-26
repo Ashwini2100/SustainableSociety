@@ -1,0 +1,67 @@
+/* Medical theme styles */
+:root {
+    --medical-blue: #007bff;
+    --medical-light-blue: #4dabf7;
+    --medical-green: #28a745;
+    --medical-light-green: #48d368;
+}
+
+/* Header styles */
+.header-icon {
+    font-size: 2rem;
+}
+
+/* Card customizations */
+.card {
+    border-radius: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Urgency level indicators */
+.urgency-immediate {
+    border-left: 5px solid #dc3545; /* Bootstrap danger color */
+}
+
+.urgency-doctor {
+    border-left: 5px solid #ffc107; /* Bootstrap warning color */
+}
+
+.urgency-self {
+    border-left: 5px solid #28a745; /* Bootstrap success color */
+}
+
+/* Symptom badges */
+.symptom-badge {
+    display: inline-block;
+    margin: 0.2rem;
+    padding: 0.5rem 0.75rem;
+    border-radius: 2rem;
+    font-size: 0.8rem;
+}
+
+/* Loading animation */
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+#loadingIndicator .spinner-border {
+    animation: pulse 2s infinite;
+}
+
+/* Responsive typography */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+    
+    h3 {
+        font-size: 1.4rem;
+    }
+}
